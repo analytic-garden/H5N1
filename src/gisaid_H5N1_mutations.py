@@ -125,13 +125,13 @@ def get_varying_columns(align: Align.MultipleSeqAlignment,
     start : int, optional
         Start searching at this columns, by default 0
     end : int, optional
-        last column to seach. If -1, end is last column. , by default -1
+        last column to search. If -1, end is last column. , by default -1
 
     Returns
     -------
     dict[int, VaryingCol]
         A dictionary
-            key: column cposition
+            key: column position
             value: a VaryingCol object
     """
     if end == -1:
