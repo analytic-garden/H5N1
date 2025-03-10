@@ -36,11 +36,7 @@ def GetArgs() -> argparse.Namespace:
         parser = Parser(description='Analyze H5N1 mutationss.')
         parser.add_argument('-i', '--msa_file',
                             required = True,
-                            help = 'MSA FASTA file created by mafft. Refereence sequence first in file. Heaaders must be ISOLATE_ID',
-                            type = str)
-        parser.add_argument('-d', '--H5N1_CSV',
-                            required = True,
-                            help = 'A CSV from a dataframe created by the R function fasta2dataframe.',
+                            help = 'MSA FASTA file created by mafft. Refereence sequence first in file.',
                             type = str)
         parser.add_argument('-g', '--GenBank_Ref',
                             required = True,
